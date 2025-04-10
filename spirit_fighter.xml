@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Spirit-Fused</name>
+        <description>The Spirit-Fused Fighter archetype from Obojima.</description>
+        <author url="https://obojima.com">Obojima</author>
+        <update version="1.0">
+            <file name="fighter-spiritfused.xml" url="https://example.com/path-to-updates/fighter-spiritfused.xml" />
+        </update>
+    </info>
+
+    <element name="Spirit-Fused" type="Archetype" source="Obojima" id="ID_author_obojima_ARCHETYPE_spirit_fused">
+        <supports>Martial Archetype</supports>
+        <description>
+            <p>The Spirit-Fused Fighter is an unconventional warrior who has become the host of a dying spirit. This union grants them the ability to channel latent energy into their attacks and objects, creating arcane effects and powerful techniques. These fighters are known for their resilience, creativity, and their strange, sometimes unpredictable, magical quirks.</p>
+        </description>
+        <sheet display="false">
+            <description>The Spirit-Fused Fighter is an unconventional warrior who has become the host of a dying spirit. This union grants them the ability to channel latent energy into their attacks and objects, creating arcane effects and powerful techniques. These fighters are known for their resilience, creativity, and their strange, sometimes unpredictable, magical quirks.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_channel_essence" level="3" />
+            <grant type="Archetype Feature" id="ID_object_channeling" level="3" />
+            <grant type="Archetype Feature" id="ID_spirit_battery" level="7" />
+            <grant type="Archetype Feature" id="ID_improved_object_channeling" level="7" />
+            <grant type="Archetype Feature" id="ID_improvised_armor" level="10" />
+            <grant type="Archetype Feature" id="ID_backup_battery" level="15" />
+            <grant type="Archetype Feature" id="ID_junk_master" level="18" />
+        </rules>
+    </element>
+
+    <element name="Channel Essence" type="Archetype Feature" source="Obojima" id="ID_channel_essence">
+        <description>
+            <p>Starting at 3rd level, you gain the ability to channel spirit energy into your attacks. You have a pool of four d6s, called essence dice, which you can expend to enhance your combat abilities. When you make a weapon attack roll against a creature, you can expend an essence die to add it to the roll or the attack’s damage roll. You can choose to do this before or after making the attack roll, but before the effects of the attack are applied.</p>
+            <p>You regain all expended essence dice when you finish a short or long rest. The size of your essence dice pool increases at higher levels: 7th level (5d6), 10th level (6d6), 15th level (7d6), and 18th level (8d6).</p>
+        </description>
+        <sheet>
+            <description>
+                Starting at 3rd level, you gain the ability to channel spirit energy into your attacks. You have a pool of four d6s, called essence dice, which you can expend to enhance your combat abilities. When you make a weapon attack roll against a creature, you can expend an essence die to add it to the roll or the attack’s damage roll. You can choose to do this before or after making the attack roll, but before the effects of the attack are applied.
+                You regain all expended essence dice when you finish a short or long rest. The size of your essence dice pool increases at higher levels: 7th level (5d6), 10th level (6d6), 15th level (7d6), and 18th level (8d6).
+            </description>
+        </sheet>
+    </element>
+
+    <element name="Object Channeling" type="Archetype Feature" source="Obojima" id="ID_object_channeling">
+        <description>
+            <p>At 3rd level, you gain the ability to channel spirit energy into objects, creating magical effects. Choose one channeling option and an associated object to use. Once used, this feature can’t be used again until you finish a short or long rest. Additionally, you gain proficiency in the Salvage skill.</p>
+            <p>Channeling options include:</p>
+            <ul>
+                <li><b>Ballooning Bag:</b> Use a bag to lift you into the air or reduce fall damage.</li>
+                <li><b>Entangling Cord:</b> Use an object to pull a creature closer to you.</li>
+                <li><b>Find the Thing:</b> Cast <i>Locate Object</i> with enhanced range and duration.</li>
+                <li><b>First Age Steed:</b> Summon a unique indestructible vehicle.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>
+                At 3rd level, you gain the ability to channel spirit energy into objects, creating magical effects. Choose one channeling option and an associated object to use. Once used, this feature can’t be used again until you finish a short or long rest. Additionally, you gain proficiency in the Salvage skill.
+                Channeling options include:
+                Ballooning Bag: Use a bag to lift you into the air or reduce fall damage.
+                Entangling Cord: Use an object to pull a creature closer to you.
+                Find the Thing: Cast Locate Object with enhanced range and duration.
+                First Age Steed: Summon a unique indestructible vehicle.
+            </description>
+        </sheet>
+    </element>
+
+    <element name="Spirit Battery" type="Archetype Feature" source="Obojima" id="ID_spirit_battery">
+        <description>
+            <p>Starting at 7th level, you learn the Jolt cantrip, modified to power machines for 1 hour and use your Constitution modifier as your spellcasting ability. Additionally, once per turn, you can replace a weapon attack’s damage with the lightning damage of the Jolt cantrip. You also count as the spirit creature type.</p>
+        </description>
+        <sheet>
+            <description>
+                Starting at 7th level, you learn the Jolt cantrip, modified to power machines for 1 hour and use your Constitution modifier as your spellcasting ability. Additionally, once per turn, you can replace a weapon attack’s damage with the lightning damage of the Jolt cantrip. You also count as the spirit creature type.
+            </description>
+        </sheet>
+    </element>
+
+    <element name="Improved Object Channeling" type="Archetype Feature" source="Obojima" id="ID_improved_object_channeling">
+        <description>
+            <p>At 7th level, you learn an additional Channeling Option and can use your Object Channeling feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>
+                At 7th level, you learn an additional Channeling Option and can use your Object Channeling feature a number of times equal to your proficiency bonus. You regain all expended uses when you finish a short or long rest.
+            </description>
+        </sheet>
+    </element>
+
+    <element name="Improvised Armor" type="Archetype Feature" source="Obojima" id="ID_improvised_armor">
+        <description>
+            <p>Starting at 10th level, you can channel your energy into objects you are wearing, causing them to harden. When hit by an attack, use your reaction to roll an essence die and add the result to your AC, potentially causing the attack to miss.</p>
+        </description>
+        <sheet>
+            <description>
+                Starting at 10th level, you can channel your energy into objects you are wearing, causing them to harden. When hit by an attack, use your reaction to roll an essence die and add the result to your AC, potentially causing the attack to miss.
+            </description>
+        </sheet>
+    </element>
+
+    <element name="Backup Battery" type="Archetype Feature" source="Obojima" id="ID_backup_battery">
+        <description>
+            <p>At 15th level, gain an additional use of Second Wind. When your hit points drop below your fighter level and you have a use of Second Wind remaining, you can expend it immediately (no action required).</p>
+        </description>
+        <sheet>
+            <description>
+                At 15th level, gain an additional use of Second Wind. When your hit points drop below your fighter level and you have a use of Second Wind remaining, you can expend it immediately (no action required).
+            </description>
+        </sheet>
+    </element>
+
+    <element name="Junk Master" type="Archetype Feature" source="Obojima" id="ID_junk_master">
+        <description>
+            <p>Starting at 18th level, gain an additional channeling option and regain two uses of Object Channeling when you roll initiative with no uses left.</p>
+        </description>
+        <sheet>
+            <description>
+                Starting at 18th level, gain an additional channeling option and regain two uses of Object Channeling when you roll initiative with no uses left.
+            </description>
+        </sheet>
+    </element>
+</elements>

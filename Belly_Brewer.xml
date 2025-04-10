@@ -1,0 +1,79 @@
+<root>
+<element name="Path of the Belly Brewer" type="Archetype" source="Obojima" id="ID_author_obojima_ARCHETYPE_belly_brewer">
+    <supports>Primal Path</supports>
+    <description>
+        <p>Barbarians who practice the Path of the Belly Brewer channel their inner hunger and magical concoctions to unleash unique effects during battle. They are skilled in crafting and consuming magical potions that enhance their combat prowess.</p>
+        <p>Starting at 3rd level, you gain access to Belly Concoctions, which allow you to mix and brew magical effects during your rage. You can choose from Combat, Utility, or Whimsy, each with its own unique benefits:</p>
+        <ul>
+            <li><b>Combat:</b> While raging, you can use your reaction to deflect ranged attacks, reducing the damage by 1d12 + your Constitution modifier + your Barbarian level. Additionally, you can stretch your melee reach by 5 feet on your turn, adding an extra 1d6 damage to melee weapon attacks.</li>
+            <li><b>Utility:</b> During your rage, you can consume an object as an action to heal yourself for 1d8 + your Constitution modifier. You can use this feature a number of times equal to your Constitution modifier per long rest.</li>
+            <li><b>Whimsy:</b> While raging, gain the effects of the Prestidigitation and Thaumaturgy cantrips. Additionally, random magical effects occur each turn as determined by the GM.</li>
+        </ul>
+        <p>At 6th level, you gain the Quick Brew feature. You can activate the effects of a common potion without consuming it. The effect lasts until your next long rest. The DC for any potion effects requiring a saving throw equals 8 + your proficiency bonus + your Constitution modifier. You may swap your chosen potion after each long rest.</p>
+        <p>At 10th level, your concoctions grant lingering benefits. After a long rest, choose one of the following effects to last until your next long rest:</p>
+        <ul>
+            <li>Immunity to being frightened.</li>
+            <li>Immunity to being poisoned.</li>
+            <li>Immunity to being restrained.</li>
+            <li>Immunity to being stunned.</li>
+        </ul>
+        <p>At 14th level, you gain the Mighty Quick Brew feature. You learn an additional potion to use with your Quick Brew feature. Additionally, you can now activate the effects of uncommon potions without consuming them. You may swap your chosen potions when you gain a level in this class.</p>
+    </description>
+    <rules>
+        <grant type="Archetype Feature" id="ID_belly_concoction" level="3" />
+        <grant type="Archetype Feature" id="ID_quick_brew" level="6" />
+        <grant type="Archetype Feature" id="ID_lingering_effects" level="10" />
+        <grant type="Archetype Feature" id="ID_mighty_quick_brew" level="14" />
+    </rules>
+</element>
+
+<element name="Belly Concoction" type="Archetype Feature" source="Obojima" id="ID_belly_concoction">
+    <description>
+        <p>Starting at 3rd level, you gain the hard-earned skill of belly brewing, an arcane technique in which you mix and brew magical effects within your gut during your rage. Choose one of the following effects each time you rage:</p>
+        <ul>
+            <li><b>Combat:</b> While raging, you can use your reaction to deflect ranged attacks, reducing the damage by 1d12 + your Constitution modifier + your Barbarian level. Additionally, you can stretch your melee reach by 5 feet on your turn, adding an extra 1d6 damage to melee weapon attacks.</li>
+            <li><b>Utility:</b> During your rage, you can consume an object as an action to heal yourself for 1d8 + your Constitution modifier. You can use this feature a number of times equal to your Constitution modifier per long rest.</li>
+            <li><b>Whimsy:</b> While raging, gain the effects of the Prestidigitation and Thaumaturgy cantrips. Additionally, random magical effects occur each turn as determined by the GM.</li>
+        </ul>
+    </description>
+    <sheet>
+        <description>Choose one of the following effects each time you rage:
+            Combat: Deflect ranged attacks and increase melee reach.
+            Utility: Consume objects to heal.
+            Whimsy: Gain Prestidigitation, Thaumaturgy, and random magical effects.</description>
+    </sheet>
+</element>
+
+<element name="Quick Brew" type="Archetype Feature" source="Obojima" id="ID_quick_brew">
+    <description>
+        <p>At 6th level, you can activate the effects of a common potion without consuming it. The effect lasts until your next long rest. The DC for any potion effects requiring a saving throw equals 8 + your proficiency bonus + your Constitution modifier. You may swap your chosen potion after each long rest.</p>
+    </description>
+    <sheet>
+        <description>Activate a common potion's effects without consuming it. The effect lasts until your next long rest.</description>
+    </sheet>
+</element>
+
+<element name="Lingering Effects" type="Archetype Feature" source="Obojima" id="ID_lingering_effects">
+    <description>
+        <p>At 10th level, your concoctions grant lingering benefits. After a long rest, choose one of the following effects to last until your next long rest:</p>
+        <ul>
+            <li>Immunity to being frightened.</li>
+            <li>Immunity to being poisoned.</li>
+            <li>Immunity to being restrained.</li>
+            <li>Immunity to being stunned.</li>
+        </ul>
+    </description>
+    <sheet>
+        <description>After a long rest, choose one immunity: frightened, poisoned, restrained, or stunned. Lasts until your next long rest.</description>
+    </sheet>
+</element>
+
+<element name="Mighty Quick Brew" type="Archetype Feature" source="Obojima" id="ID_mighty_quick_brew">
+    <description>
+        <p>At 14th level, you learn an additional potion to use with your Quick Brew feature. Additionally, you can now activate the effects of uncommon potions without consuming them. You may swap your chosen potions when you gain a level in this class.</p>
+    </description>
+    <sheet>
+        <description>Activate uncommon potions without consuming them. Gain an additional potion with your Quick Brew feature.</description>
+    </sheet>
+</element>
+</root>

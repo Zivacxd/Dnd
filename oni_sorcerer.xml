@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Oni Bloodline</name>
+        <description>The Oni Bloodline Sorcerous Origin from Obojima.</description>
+        <author url="https://obojima.com">Obojima</author>
+        <update version="1.0">
+            <file name="sorcerer-onibloodline.xml" url="https://example.com/path-to-updates/sorcerer-onibloodline.xml" />
+        </update>
+    </info>
+
+    <element name="Oni Bloodline" type="Archetype" source="Obojima" id="ID_author_obojima_ARCHETYPE_oni_bloodline">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p>Oni Bloodline sorcerers harness the ancient power of the oni within their lineage, transforming both physically and spiritually as their magic grows. Their heritage grants them fearsome abilities, but they must struggle to maintain control over the oni’s destructive impulses.</p>
+            <div element="ID_arcane_prison" />
+            <div element="ID_ogre_manipulation" />
+            <div element="ID_transformation" />
+        </description>
+        <sheet>
+            <description>Oni Bloodline sorcerers harness the ancient power of the oni within their lineage, transforming both physically and spiritually as their magic grows. Their heritage grants them fearsome abilities, but they must struggle to maintain control over the oni’s destructive impulses.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_arcane_prison" level="1" />
+            <grant type="Archetype Feature" id="ID_ogre_manipulation" level="6" />
+            <grant type="Archetype Feature" id="ID_transformation" level="18" />
+        </rules>
+    </element>
+
+    <element name="Arcane Prison" type="Archetype Feature" source="Obojima" id="ID_arcane_prison">
+        <description>
+            <p>At 1st level, you gain traits tied to the oni within. These traits manifest based on the number of sorcery points you’re missing, with specific traits unlocked as your sorcery point pool depletes. Each trait provides both a physical and magical manifestation, which lasts until you finish a long rest.</p>
+            <h5>Oni Traits</h5>
+            <ul>
+                <li><b>Eyes:</b> Gain advantage on Charisma checks directed at one creature. When the effect ends, the target must make a Wisdom save or become hostile toward you.</li>
+                <li><b>Horns:</b> Cast cantrips through melee spell attacks with your horns. Opportunity attacks can also use cantrips via your horns.</li>
+                <li><b>Skin:</b> Gain regenerative powers, regaining hit points when casting spells of 1st level or higher.</li>
+                <li><b>Tongue:</b> Use a bonus action to force a creature targeted by your spells to make a Wisdom save or be forced to move or fall prone.</li>
+                <li><b>Hair:</b> Gain a +2 bonus to AC.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>At 1st level, gain traits tied to your oni lineage based on missing sorcery points: Eyes (advantage on Charisma checks), Horns (cast cantrips through melee attacks), Skin (regenerate health), Tongue (force enemy movement), and Hair (+2 AC).</description>
+        </sheet>
+    </element>
+
+    <element name="Ogre Manipulation" type="Archetype Feature" source="Obojima" id="ID_ogre_manipulation">
+        <description>
+            <p>Starting at 6th level, you can manifest one of your oni traits early. As a bonus action, activate a trait for 1 minute, regardless of how many sorcery points you’re missing. Once used, this feature cannot be used again until you finish a long rest.</p>
+            <p>At 14th level, your oni traits grow stronger. For example, your horn attacks deal more damage, and your Tongue trait can impose greater penalties on enemies.</p>
+        </description>
+        <sheet>
+            <description>At 6th level, activate oni traits early as a bonus action. At 14th level, oni traits grow stronger (e.g., stronger horn attacks, enhanced Tongue effects).</description>
+        </sheet>
+    </element>
+
+    <element name="Transformation" type="Archetype Feature" source="Obojima" id="ID_transformation">
+        <description>
+            <p>Beginning at 18th level, you can fully manifest all your oni traits for 1 minute as an action, regardless of missing sorcery points. While transformed, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks and cannot be charmed or frightened. Once used, this feature cannot be used again until you finish a long rest, unless you spend 5 sorcery points to activate it again.</p>
+        </description>
+        <sheet>
+            <description>At 18th level, fully manifest all oni traits for 1 minute, gaining resistances to nonmagical damage and immunity to charm and fear effects. Use once per long rest or spend 5 sorcery points to activate again.</description>
+        </sheet>
+    </element>
+</elements>

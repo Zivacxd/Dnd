@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>The Lantern</name>
+        <description>The Lantern Patron for Warlocks from Obojima.</description>
+        <author url="https://obojima.com">Obojima</author>
+        <update version="1.0">
+            <file name="warlock-lantern.xml" url="https://example.com/path-to-updates/warlock-lantern.xml" />
+        </update>
+    </info>
+
+    <element name="The Lantern" type="Archetype" source="Obojima" id="ID_author_obojima_ARCHETYPE_lantern">
+        <supports>Otherworldly Patron</supports>
+        <description>
+            <p>Warlocks who make a pact with a powerful spirit are able to tap into the magic that flows through the Spirit Realm. These warlocks are known by the special lanterns they carry—lanterns that burn with the essence of their patron. The illumination of this vessel carries with it the attributes of the spirit, granting the warlock an array of abilities.</p>
+            <div element="ID_lantern_spell_list" />
+            <div element="ID_illuminating_aura" />
+            <div element="ID_revealing_light" />
+            <div element="ID_dangerous_tool" />
+            <div element="ID_oracle_illumination" />
+            <div element="ID_brilliant_illumination" />
+            <div element="ID_brighter_still" />
+        </description>
+        <sheet>
+            <description>Warlocks who make a pact with a powerful spirit are known for their enchanted lanterns, which carry the essence of their patron and grant them unique magical abilities.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_lantern_spell_list" level="1" />
+            <grant type="Archetype Feature" id="ID_illuminating_aura" level="1" />
+            <grant type="Archetype Feature" id="ID_revealing_light" level="1" />
+            <grant type="Archetype Feature" id="ID_dangerous_tool" level="6" />
+            <grant type="Archetype Feature" id="ID_oracle_illumination" level="6" />
+            <grant type="Archetype Feature" id="ID_brilliant_illumination" level="10" />
+            <grant type="Archetype Feature" id="ID_brighter_still" level="14" />
+        </rules>
+    </element>
+
+    <element name="Expanded Spell List" type="Archetype Feature" source="Obojima" id="ID_lantern_spell_list">
+        <supports>Warlock</supports>
+        <description>
+            <p>The Lantern lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+            <h5>LANTERN EXPANDED SPELLS</h5>
+            <table>
+                <thead>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td><em>faerie fire, identify</em></td></tr>
+                <tr><td>2nd</td><td><em>locate object, swallow magic</em></td></tr>
+                <tr><td>3rd</td><td><em>daylight, nondetection</em></td></tr>
+                <tr><td>4th</td><td><em>guardian of faith, locate creature</em></td></tr>
+                <tr><td>5th</td><td><em>create spirit train stop, tamh gon’s fiery festival feast</em></td></tr>
+            </table>
+        </description>
+        <sheet>
+            <description>The Lantern lets you choose from an expanded list of spells: Faerie Fire, Identify, Locate Object, and others at higher levels.</description>
+        </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_FAERIE_FIRE</extend>
+            <extend>ID_PHB_SPELL_IDENTIFY</extend>
+            <extend>ID_PHB_SPELL_LOCATE_OBJECT</extend>
+            <extend>ID_HOME_SPELL_SWALLOW_MAGIC</extend>
+            <extend>ID_PHB_SPELL_DAYLIGHT</extend>
+            <extend>ID_PHB_SPELL_NONDETECTION</extend>
+            <extend>ID_PHB_SPELL_GUARDIAN_OF_FAITH</extend>
+            <extend>ID_PHB_SPELL_LOCATE_CREATURE</extend>
+            <extend>ID_HOME_SPELL_CREATE_SPIRIT_TRAIN_STOP</extend>
+            <extend>ID_HOME_SPELL_TAMH_GONS_FIERY_FESTIVAL_FEAST</extend>
+        </spellcasting>
+    </element>
+
+    <element name="Illuminating Aura" type="Archetype Feature" source="Obojima" id="ID_illuminating_aura">
+        <description>
+            <p>Starting at 1st level, the essence of your spirit patron is channeled into a lantern, where it appears as a minor form of itself. As a bonus action, you can activate your lantern, causing it to shed bright light in a 20-foot radius and dim light for an additional 20 feet for 1 minute. While active, you gain the following benefits:</p>
+            <ul>
+                <li>Grant a bonus to saving throws equal to your Charisma modifier to allies in the lantern’s bright light.</li>
+                <li>Hostile creatures in the lantern’s dim light take radiant damage equal to half your warlock level when they fail a saving throw.</li>
+            </ul>
+            <p>Once you use this feature, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Activate your lantern as a bonus action for 1 minute. Grant allies in bright light a bonus to saving throws (Charisma modifier). Hostile creatures in dim light take radiant damage (half your warlock level) on failed saves.</description>
+        </sheet>
+    </element>
+
+    <element name="Revealing Light" type="Archetype Feature" source="Obojima" id="ID_revealing_light">
+        <description>
+            <p>At 1st level, you can use an action to cause your lantern to illuminate with a vibrant maroon light, shedding bright light in a 10-foot radius and dim light for an additional 10 feet. Invisible creatures and objects are visible as long as they are in the lantern’s bright light. This effect lasts for 1 hour or until you snuff it out early as a bonus action.</p>
+            <p>Once you use this feature, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Use an action to illuminate invisible creatures and objects within bright light (10 feet). Lasts 1 hour or until snuffed out as a bonus action.</description>
+        </sheet>
+    </element>
+
+    <element name="Dangerous Tool" type="Archetype Feature" source="Obojima" id="ID_dangerous_tool">
+        <description>
+            <p>At 6th level, your Illuminating Aura no longer ends if you let go of your lantern. You can control it magically for 1 minute, using it as if it were a <em>spiritual weapon</em> spell cast at 2nd level. The spell level increases at higher levels: 4th level at 10th level, and 6th level at 15th level.</p>
+            <p>Once you use this feature, you can’t do so again until you finish a long rest, unless you expend a warlock spell slot to use it again.</p>
+        </description>
+        <sheet>
+            <description>Control your lantern for 1 minute as a <em>spiritual weapon</em> (2nd level, higher at 10th/15th). Requires a long rest or spell slot to reuse.</description>
+        </sheet>
+    </element>
+
+    <element name="Oracle Illumination" type="Archetype Feature" source="Obojima" id="ID_oracle_illumination">
+        <description>
+            <p>Starting at 6th level, you can magically connect your mind to a light source, using it as a sensor for the <em>clairvoyance</em> spell for 10 minutes. You can’t use the same light source again until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>Connect your mind to a light source within sight as a <em>clairvoyance</em> spell sensor for 10 minutes. Once per light source per long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Brilliant Illumination" type="Archetype Feature" source="Obojima" id="ID_brilliant_illumination">
+        <description>
+            <p>At 10th level, while your Illuminating Aura is active, you can cause the light to flare with a brilliant flash. Creatures in the light must make a Constitution saving throw against your spell save DC. On a failed save, they take radiant damage equal to 2d8 + your warlock level and are blinded until the end of your next turn. On a successful save, they take half damage and aren’t blinded.</p>
+            <p>Once you use this feature, you can’t do so again until you finish a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>Cause your lantern to flare (Illuminating Aura active). Creatures in the light make a Constitution save (DC = spell save DC). Failed save: 2d8 + warlock level radiant damage, blinded until next turn. Success: half damage, not blinded.</description>
+        </sheet>
+    </element>
+
+    <element name="Brighter Still" type="Archetype Feature" source="Obojima" id="ID_brighter_still">
+        <description>
+            <p>At 14th level, you gain the ability to activate your lantern’s Illuminating Aura at will. Additionally, you can use an action to cause your lantern to illuminate with a pale blue light, revealing a glowing arcane path to a location you’re familiar with, as if casting the <em>find the path</em> spell. Once you use this feature, you can’t do so again until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>Activate Illuminating Aura at will. Use an action to cast <em>find the path</em>, revealing an arcane route to a familiar location. Once per long rest.</description>
+        </sheet>
+    </element>
+</elements>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Corrupted Ranger</name>
+        <description>The Corrupted Ranger archetype from Obojima.</description>
+        <author url="https://obojima.com">Obojima</author>
+        <update version="1.0">
+            <file name="ranger-corrupted.xml" url="https://example.com/path-to-updates/ranger-corrupted.xml" />
+        </update>
+    </info>
+
+    <element name="Corrupted Ranger" type="Archetype" source="Obojima" id="ID_author_obojima_ARCHETYPE_corrupted_ranger">
+        <supports>Ranger Archetype</supports>
+        <description>
+            <p>The Corrupted Ranger is cursed and empowered by the Corruption’s rotting magic, which slowly replaces their flesh with unearthly power. These rangers must balance their growing abilities with the ominous curse that binds them.</p>
+        </description>
+        <sheet display="false">
+            <description>The Corrupted Ranger is cursed and empowered by the Corruption’s rotting magic, which slowly replaces their flesh with unearthly power. These rangers must balance their growing abilities with the ominous curse that binds them.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_first_manifestation" level="3" />
+            <grant type="Archetype Feature" id="ID_second_manifestation" level="3" />
+            <grant type="Archetype Feature" id="ID_third_manifestation" level="7" />
+            <grant type="Archetype Feature" id="ID_fourth_manifestation" level="11" />
+            <grant type="Archetype Feature" id="ID_fifth_manifestation" level="15" />
+        </rules>
+    </element>
+
+    <element name="First Manifestation" type="Archetype Feature" source="Obojima" id="ID_first_manifestation">
+        <description>
+            <p>Starting at 3rd level, the Corruption within begins to manifest in combat. Whenever you take damage, you receive a curse marker; if the damage was from a critical hit, you receive two curse markers instead. These markers last until the end of your next turn, and the maximum number of curse markers you can accumulate at a time is 2. When you hit a creature with a weapon attack, all curse markers are consumed, dealing 1d4 necrotic damage per marker consumed.</p>
+            <p>Alternatively, as a bonus action, you can immediately gain the maximum number of curse markers. The number of curse markers you can accumulate increases to 3 at 5th level, 4 at 11th level, and 5 at 17th level.</p>
+        </description>
+        <sheet>
+            <description>Starting at 3rd level, whenever you take damage, you receive a curse marker; critical hits grant two markers. Markers last until the end of your next turn and can be consumed when you hit with a weapon attack to deal 1d4 necrotic damage per marker. As a bonus action, you can generate the maximum number of curse markers. Maximum markers increase at higher levels (3 at 5th, 4 at 11th, 5 at 17th).</description>
+        </sheet>
+    </element>
+
+    <element name="Second Manifestation" type="Archetype Feature" source="Obojima" id="ID_second_manifestation">
+        <description>
+            <p>At 3rd level, you notice peculiar movements within your body. When making a Strength or Dexterity check, you can replace the result with 10 + your ranger level. You can wait until after you roll the d20 before deciding to use this feature, but must decide before the GM says whether the roll succeeds or fails. You can use this feature a number of times equal to half your proficiency bonus (rounded up), regaining all uses after a long rest.</p>
+        </description>
+        <sheet>
+            <description>At 3rd level, replace the result of a Strength or Dexterity check with 10 + your ranger level a number of times equal to half your proficiency bonus (rounded up). Regain all uses after a long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Third Manifestation" type="Archetype Feature" source="Obojima" id="ID_third_manifestation">
+        <description>
+            <p>At 7th level, when making a weapon attack, you can expend one curse marker to roll a d4 and add it to the attack roll. Additionally, whenever you take damage, you can use your reaction to reduce the damage by an amount equal to your ranger level. You regain the use of this damage reduction after a short or long rest.</p>
+        </description>
+        <sheet>
+            <description>At 7th level, expend a curse marker to enhance weapon attacks with a d4. Use a reaction to reduce damage taken by your ranger level once per short or long rest.</description>
+        </sheet>
+    </element>
+
+    <element name="Fourth Manifestation" type="Archetype Feature" source="Obojima" id="ID_fourth_manifestation">
+        <description>
+            <p>At 11th level, your ailment manifests in a unique way. Choose one of the following:</p>
+            <ul>
+                <li><b>Graying Vision:</b> Gain blindsight out to 15 feet and automatically detect visual illusions if their DC is less than or equal to your ranger spell save DC.</li>
+                <li><b>Failing Lungs:</b> As an action, pull your next breath from a creature you can see. The target falls prone and can’t take reactions until the start of your next turn. Consume all curse markers, dealing 1d4 necrotic damage per marker to the target.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>At 11th level, choose one: Graying Vision grants blindsight (15 ft) and automatic detection of certain illusions; or Failing Lungs lets you incapacitate a creature and deal 1d4 necrotic damage per curse marker as an action.</description>
+        </sheet>
+    </element>
+
+    <element name="Fifth Manifestation" type="Archetype Feature" source="Obojima" id="ID_fifth_manifestation">
+        <description>
+            <p>Starting at 15th level, as a bonus action, activate the Corruption to double your walking speed, increase AC by 2, and make two additional attacks when taking the Attack action. All attacks count as if you have the maximum number of curse markers. This effect lasts until the start of your next turn. Once used, you must finish a long rest before using it again. If used a second time before finishing a long rest, you suffer one level of exhaustion and drop to 1 hit point at the start of your turn if above 1 hit point.</p>
+        </description>
+        <sheet>
+            <description>At 15th level, as a bonus action, activate Corruption to double walking speed, increase AC by 2, make two extra attacks, and count all attacks as maximum curse markers. Suffer exhaustion and hit point penalties if used again before a long rest.</description>
+        </sheet>
+    </element>
+</elements>

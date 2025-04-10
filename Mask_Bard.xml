@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>College of Masks</name>
+    <description>The College of Masks subclass for Bards from Obojima.</description>
+    <author url="https://obojima.com">Obojima</author>
+    <update version="1.0">
+        <file name="college_of_masks.xml" url="https://example.com/path-to-updates/college_of_masks.xml" />
+    </update>
+  </info>
+
+  <element name="College of Masks" type="Archetype" source="Obojima" id="ID_author_obojima_ARCHETYPE_college_of_masks">
+    <supports>Bard College</supports>
+    <description>
+      <p>The College of Masks allows Bards to channel the magic of theater masks, imbuing them with powers that enhance their abilities to mimic others and transform into new personas.</p>
+      <div element="ID_tools_of_performance" />
+      <div element="ID_copycat" />
+      <div element="ID_many_masked_performance" />
+      <div element="ID_gift_of_theatre" />
+    </description>
+    <sheet>
+      <description>Bards of the College of Masks imbue magical theater masks with abilities to mimic others, transform, and enhance their performance capabilities. Gain unique masks at levels 3, 7, 11, and 15.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_tools_of_performance" level="3" />
+      <grant type="Archetype Feature" id="ID_copycat" level="3" />
+      <grant type="Archetype Feature" id="ID_many_masked_performance" level="6" />
+      <grant type="Archetype Feature" id="ID_gift_of_theatre" level="14" />
+    </rules>
+  </element>
+
+  <element name="Tools of Performance" type="Archetype Feature" source="Obojima" id="ID_tools_of_performance">
+    <description>
+      <p>At 3rd level, you gain the ability to craft magical theater masks. You start with two masks of your choice, detailed below. You gain an additional mask at 7th, 11th, and 15th level. Each time you craft a new mask, you may replace one previously crafted mask. Donning or swapping masks requires an action or bonus action. If a mask ability requires a saving throw, the DC equals your Bard spell save DC.</p>
+    </description>
+    <sheet>
+      <description>Craft magical masks (2 at 3rd level, 3 at 7th, 4 at 11th, 5 at 15th level). Masks grant abilities; swapping or donning requires an action/bonus action. Save DC: Bard spell save DC.</description>
+    </sheet>
+  </element>
+
+  <element name="Copycat" type="Archetype Feature" source="Obojima" id="ID_copycat">
+    <description>
+      <p>At 3rd level, you gain the ability to mimic another humanoid’s appearance. As an action, you can expend one use of Bardic Inspiration to cast the <em>Alter Self</em> spell, using the Change Appearance option with the following changes:</p>
+      <ul>
+        <li>The spell does not require concentration and lasts until you dismiss it (no action required).</li>
+        <li>You gain 5 temporary hit points; the spell ends early if you lose these hit points or die.</li>
+        <li>You gain non-magical versions of the target's equipment that you are aware of, which disappear when the spell ends.</li>
+        <li>Your original equipment is merged into your form and unusable while transformed.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>Expend Bardic Inspiration to cast <em>Alter Self</em>: no concentration, 5 temp HP, copy target's appearance and non-magical equipment. Ends if temp HP is lost or dismissed.</description>
+    </sheet>
+  </element>
+
+  <element name="Many-Masked Performance" type="Archetype Feature" source="Obojima" id="ID_many_masked_performance">
+    <description>
+      <p>At 6th level, you can enthrall an audience with a dramatic performance. Over 1 minute, you attempt to charm, frighten, or incapacitate creatures. Choose up to your Bard level in creatures within 60 feet that can hear you. Each target must make a Wisdom saving throw against your spell save DC or suffer the chosen condition for 1 minute. Affected creatures can repeat the save at the end of their turns, ending the effect on a success.</p>
+      <p>Once you use this feature, you cannot use it again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>Perform for 1 minute to charm, frighten, or incapacitate creatures (Bard level number, 60ft, Wisdom save). Effect lasts 1 minute; save ends. Once per long rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Gift of Theatre" type="Archetype Feature" source="Obojima" id="ID_gift_of_theatre">
+    <description>
+      <p>At 14th level, you can give one of your magical theater masks to an ally within 5 feet. As an action, transfer your mask’s power to a willing creature for 1 minute. Only one creature can use the mask at a time.</p>
+      <p>Once you use this feature, you cannot do so again until you finish a short or long rest.</p>
+    </description>
+    <sheet>
+      <description>Transfer a magical mask’s power to an ally for 1 minute (action). Once per short/long rest.</description>
+    </sheet>
+  </element>
+</elements>

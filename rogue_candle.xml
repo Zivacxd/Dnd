@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Waxwork Rogue</name>
+        <description>The Waxwork Rogue archetype from Obojima.</description>
+        <author url="https://obojima.com">Obojima</author>
+        <update version="1.0">
+            <file name="rogue-waxwork.xml" url="https://example.com/path-to-updates/rogue-waxwork.xml" />
+        </update>
+    </info>
+
+    <element name="Waxwork Rogue" type="Archetype" source="Obojima" id="ID_author_obojima_ARCHETYPE_waxwork_rogue">
+        <supports>Roguish Archetype</supports>
+        <description>
+            <p>Waxwork Rogues are skilled adventurers who manipulate wax and fire with magic learned from the Spirit Realm. Known for their inventive solutions and daring exploits, these rogues embrace both the arcane and the dangerous.</p>
+            <div element="ID_conjure_flame" />
+            <div element="ID_wax_enchantments" />
+            <div element="ID_burn_cycle" />
+            <div element="ID_advanced_enchantments" />
+            <div element="ID_pink_candle" />
+        </description>
+        <sheet>
+            <description>Manipulates wax and fire with arcane skill, solving challenges with ingenuity.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_conjure_flame" level="3" />
+            <grant type="Archetype Feature" id="ID_wax_enchantments" level="3" />
+            <grant type="Archetype Feature" id="ID_burn_cycle" level="9" />
+            <grant type="Archetype Feature" id="ID_advanced_enchantments" level="13" />
+            <grant type="Archetype Feature" id="ID_pink_candle" level="17" />
+        </rules>
+    </element>
+
+    <element name="Conjure Flame" type="Archetype Feature" source="Obojima" id="ID_conjure_flame">
+        <description>
+            <p>At 3rd level, you learn the Dancing Lights* and Produce Flame* cantrips. Dancing Lights appears as floating candles.</p>
+        </description>
+        <sheet>
+            <description>At 3rd level, learn the Dancing Lights (floating candles) and Produce Flame cantrips.</description>
+        </sheet>
+    </element>
+
+    <element name="Wax Enchantments" type="Archetype Feature" source="Obojima" id="ID_wax_enchantments">
+        <description>
+            <p>At 3rd level, you learn to create magical wax enchantments fueled by wick points.</p>
+            <h5>Wick Points</h5>
+            <p>You have 3 wick points, which represent your ability to harness magic from the Spirit Realm. Wick points are regained after a short or long rest. You gain 1 additional wick point for each level in this class.</p>
+            <h5>Enchantments</h5>
+            <p>You learn three enchantments of your choice. You learn two additional enchantments at 5th, 10th, and 15th levels. Enchantment save DC = 8 + proficiency bonus + Intelligence or Charisma modifier (your choice).</p>
+        </description>
+        <sheet>
+            <description>At 3rd level, gain 3 wick points to fuel magical wax enchantments. Learn three enchantments and gain more as you level up.</description>
+        </sheet>
+    </element>
+
+    <element name="Burn Cycle" type="Archetype Feature" source="Obojima" id="ID_burn_cycle">
+        <description>
+            <p>Starting at 9th level, you can spend wick points to deal extra fire damage when you deal Sneak Attack damage. The extra damage is 1d6 for each wick point spent, up to 4d6.</p>
+        </description>
+        <sheet>
+            <description>At 9th level, spend wick points when dealing Sneak Attack damage to add 1d6 fire damage per point, up to 4d6.</description>
+        </sheet>
+    </element>
+
+    <element name="Advanced Enchantments" type="Archetype Feature" source="Obojima" id="ID_advanced_enchantments">
+        <description>
+            <p>At 13th level, your enchantments become more potent. You gain enhanced versions of certain enchantments, such as Blooming Light lasting 8 hours or summoning two waxlings with Waxlings.</p>
+        </description>
+        <sheet>
+            <description>At 13th level, enhance your enchantments with more potent effects, such as longer durations or additional functionality.</description>
+        </sheet>
+    </element>
+
+    <element name="Pink Candle" type="Archetype Feature" source="Obojima" id="ID_pink_candle">
+        <description>
+            <p>At 17th level, you can ignite a pink candle that grants the following benefits for 1 minute:</p>
+            <ul>
+                <li>Reduce the wick point cost of your enchantments by 1.</li>
+                <li>Gain immunity to fire damage.</li>
+                <li>Spirits have disadvantage on attack rolls against you.</li>
+            </ul>
+            <p>If you fall prone, you must succeed on a DC 15 Dexterity saving throw or the candle extinguishes. Once used, this feature cannot be used again until you finish a long rest.</p>
+        </description>
+        <sheet>
+            <description>At 17th level, ignite a pink candle to reduce enchantment costs, gain fire immunity, and impose disadvantage on spirits' attacks for 1 minute. Use once per long rest.</description>
+        </sheet>
+    </element>
+</elements>

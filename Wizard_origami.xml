@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Origami Mage</name>
+        <description>The Origami Mage Arcane Tradition for Wizards from Obojima.</description>
+        <author url="https://obojima.com">Obojima</author>
+        <update version="1.0">
+            <file name="wizard-origamimage.xml" url="https://example.com/path-to-updates/wizard-origamimage.xml" />
+        </update>
+    </info>
+
+    <element name="Origami Mage" type="Archetype" source="Obojima" id="ID_author_obojima_ARCHETYPE_origami_mage">
+        <supports>Arcane Tradition</supports>
+        <description>
+            <p>Origami Mages are wielders of a unique form of magic that combines precision, creativity, and imagination. With a flick of their wrist and a whisper of arcane words, they transform simple sheets of paper into awe-inspiring manifestations of elemental forces, mystical beings, and fantastical creatures.</p>
+            <div element="ID_origami_constructs" />
+            <div element="ID_origami_familiar" />
+            <div element="ID_binding_release" />
+            <div element="ID_paper_path" />
+            <div element="ID_origami_servant" />
+            <div element="ID_arcane_refresh" />
+        </description>
+        <sheet>
+            <description>Origami Mages use enchanted paper constructs to enhance their magic and grant unique benefits in battle.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_origami_constructs" level="2" />
+            <grant type="Archetype Feature" id="ID_origami_familiar" level="2" />
+            <grant type="Archetype Feature" id="ID_binding_release" level="6" />
+            <grant type="Archetype Feature" id="ID_paper_path" level="6" />
+            <grant type="Archetype Feature" id="ID_origami_servant" level="10" />
+            <grant type="Archetype Feature" id="ID_arcane_refresh" level="14" />
+        </rules>
+    </element>
+
+    <element name="Origami Constructs" type="Archetype Feature" source="Obojima" id="ID_origami_constructs">
+        <description>
+            <p>At 2nd level, you learn to weave magic into origami, allowing you to create magnificent moving art pieces, which act on your behalf. As a bonus action, you can fold and imbue life into a paper construct that grants unique benefits to its bound creature. Constructs last for a number of hours equal to half your wizard level, have AC equal to your spell save DC, and are destroyed when they take any damage.</p>
+            <p>You can use this feature to create an origami construct a number of times equal to your proficiency bonus, regaining all uses on a long rest. The available constructs are:</p>
+            <ul>
+                <li><strong>Bird:</strong> Grants proficiency in Perception and +2 slashing damage to ranged attacks.</li>
+                <li><strong>Cat:</strong> Grants proficiency in Stealth and adds 1d6 slashing damage on melee attacks (increases at higher levels).</li>
+                <li><strong>Crab:</strong> Grants +1 AC and proficiency in Athletics. Only one crab can be active at a time.</li>
+                <li><strong>Dragon:</strong> Explodes on destruction for 2d6 fire damage to nearby creatures.</li>
+                <li><strong>Frog:</strong> Grants proficiency in Acrobatics and a bonus to Dexterity saving throws equal to the wizard's spellcasting ability modifier.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Create paper constructs that grant unique benefits, such as skill proficiencies, additional damage, or AC bonuses. Constructs last for hours equal to half your wizard level and are destroyed when damaged.</description>
+        </sheet>
+    </element>
+
+    <element name="Origami Familiar" type="Archetype Feature" source="Obojima" id="ID_origami_familiar">
+        <description>
+            <p>At 2nd level, you learn the <em>Find Familiar</em> spell, always have it prepared, and can summon an origami version of a familiar. The familiar is immune to poison and psychic damage, and gains these abilities:</p>
+            <ul>
+                <li><strong>Camouflage:</strong> Flatten into a paper form, indistinguishable from normal paper (requires an Investigation check).</li>
+                <li><strong>Last Resort:</strong> Blind a creature by wrapping around its face (Dexterity save vs. spell save DC to avoid).</li>
+                <li><strong>Reconnaissance:</strong> Record sounds within 15 feet and return with a written transcript.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Summon an origami familiar immune to poison and psychic damage, with abilities to camouflage, blind enemies, or record sounds.</description>
+        </sheet>
+    </element>
+
+    <element name="Binding Release" type="Archetype Feature" source="Obojima" id="ID_binding_release">
+        <description>
+            <p>Starting at 6th level, you can use a bonus action to move one of your origami constructs to a creature you can see within 30 feet of it.</p>
+        </description>
+        <sheet>
+            <description>Use a bonus action to move an origami construct within 30 feet to another creature.</description>
+        </sheet>
+    </element>
+
+    <element name="Paper Path" type="Archetype Feature" source="Obojima" id="ID_paper_path">
+        <description>
+            <p>At 6th level, when you cast a spell with a range of touch, your origami construct can deliver the spell as if it had cast it. The construct must be within 100 feet of you.</p>
+        </description>
+        <sheet>
+            <description>Origami constructs can deliver touch-range spells within 100 feet.</description>
+        </sheet>
+    </element>
+
+    <element name="Origami Servant" type="Archetype Feature" source="Obojima" id="ID_origami_servant">
+        <description>
+            <p>At 10th level, you learn the <em>Unseen Servant</em> spell, always have it prepared, and can summon multiple visible origami servants. They gain immunity to poison and psychic damage, can fit through narrow spaces, and see invisible creatures. You can issue unique commands to each servant.</p>
+        </description>
+        <sheet>
+            <description>Summon multiple origami servants immune to poison and psychic damage. They can fit through narrow spaces and see invisible creatures.</description>
+        </sheet>
+    </element>
+
+    <element name="Arcane Refresh" type="Archetype Feature" source="Obojima" id="ID_arcane_refresh">
+        <description>
+            <p>At 14th level, when one of your constructs is destroyed, you can regain 10 hit points or a 2nd-level or lower spell slot. Additionally, you can use your reaction to negate damage to a construct once per long rest.</p>
+        </description>
+        <sheet>
+            <description>Regain 10 hit points or a 2nd-level spell slot when a construct is destroyed. Once per long rest, negate damage to a construct as a reaction.</description>
+        </sheet>
+    </element>
+</elements>

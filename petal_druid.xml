@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+  <info>
+    <name>Circle of the Petal</name>
+    <description>The Circle of the Petal from Obojima.</description>
+    <author url="https://obojima.com">Obojima</author>
+    <update version="1.0">
+        <file name="petal_druid.xml" url="https://example.com/path-to-updates/petal_druid.xml" />
+    </update>
+  </info>
+
+  <element name="Circle of the Petal" type="Archetype" source="Obojima" id="ID_author_obojima_ARCHETYPE_circle_of_the_petal">
+    <supports>Druid Circle</supports>
+    <description>
+      <p>In the tranquil groves where nature’s harmony sings loudest, there exists a circle of druids attuned to the delicate dance of petals upon the breeze. These druids, known as the Circle of the Petal, draw their power from the spirit of Obojima, harnessing the whispers of the wind and the ephemeral beauty of flowers to weave their enchantments and shape the world around them.</p>
+      <div element="ID_petal_dance" />
+      <div element="ID_petal_beast_mimicry" />
+      <div element="ID_spirit_of_obojima" />
+      <div element="ID_winds_of_revival" />
+    </description>
+    <sheet>
+      <description>Druids of the Circle of the Petal weave magic through petals and the whispers of Obojima’s winds to protect and heal allies while unleashing bursts of floral power.</description>
+    </sheet>
+    <rules>
+      <grant type="Archetype Feature" id="ID_petal_dance" level="2" />
+      <grant type="Archetype Feature" id="ID_petal_beast_mimicry" level="6" />
+      <grant type="Archetype Feature" id="ID_spirit_of_obojima" level="10" />
+      <grant type="Archetype Feature" id="ID_winds_of_revival" level="14" />
+    </rules>
+  </element>
+
+  <element name="Petal Dance" type="Archetype Feature" source="Obojima" id="ID_petal_dance">
+    <description>
+      <p>At 2nd level, you can expend a use of your Wild Shape as a bonus action to conjure a resilient cloud of petals that lasts for 1 hour. While enveloped by the cloud, your AC increases by 1 and you gain the following benefits:</p>
+      <ul>
+        <li>As a bonus action, cause your petals to lunge toward a creature within 30 feet. Make a ranged spell attack using your spell attack bonus. On a hit, the target takes 1d6 slashing damage. This damage increases to 2d6 at 5th level, 3d6 at 11th level, and 4d6 at 17th level.</li>
+        <li>When you or a creature within 10 feet of you takes damage, use your reaction to reduce that damage by an amount equal to your druid level + your Wisdom modifier. Using this ability dissipates the cloud.</li>
+      </ul>
+    </description>
+    <sheet>
+      <description>Expend Wild Shape to summon a petal cloud (1 hour): +1 AC, ranged spell attack (1d6 at lvl1, 2d6 at lvl5, 3d6 at lvl9 and 4d6 at lvl15), and reduce damage to self or ally (reaction). Cloud dissipates after use.</description>
+    </sheet>
+  </element>
+
+  <element name="Petal Beast Mimicry" type="Archetype Feature" source="Obojima" id="ID_petal_beast_mimicry">
+    <description>
+      <p>At 6th level, as an action, you can summon a spirit shaped like a creature of your choice. The spirit uses the bestial spirit statistics, with the following changes:</p>
+      <ul>
+        <li>Hit points equal three times your druid level.</li>
+        <li>Attack modifier equals your spell attack modifier.</li>
+        <li>Flying speed of 20 feet and can hover.</li>
+        <li>Can move through other creatures as difficult terrain.</li>
+      </ul>
+      <p>If reduced to 0 hit points, the spirit explodes in petals, causing all creatures within 20 feet to make a Dexterity saving throw against your spell save DC or be affected by the <em>faerie fire</em> spell. Lasts 1 minute or until dismissed (no action required).</p>
+      <p>You can summon two spirits at 11th level by expending two uses of this ability. You regain all uses after a long rest.</p>
+    </description>
+    <sheet>
+      <description>Summon a bestial spirit (3× druid level HP, 20ft fly/hover, attacks use your spell attack). At 0 HP, explodes with <em>faerie fire</em> effect (Dex save). Two spirits at 11th level (2 uses).</description>
+    </sheet>
+  </element>
+
+  <element name="Spirit of Obojima" type="Archetype Feature" source="Obojima" id="ID_spirit_of_obojima">
+    <description>
+      <p>Starting at 10th level, you gain the following benefits:</p>
+      <ul>
+        <li>Advantage on Wisdom (Survival) checks to find paths or creatures, with white petals guiding the way.</li>
+        <li>As an action, summon a wall of shifting petals (1 foot thick, 15 feet tall, 60 feet long). Creatures can’t pass through except those you designate. Lasts a number of minutes equal to your druid level or until dispelled.</li>
+      </ul>
+      <p>You can use this feature once per long rest.</p>
+    </description>
+    <sheet>
+      <description>Advantage on Survival checks to track. Create a petal wall (15×60ft barrier, designated creatures pass, lasts minutes = druid level). Once per long rest.</description>
+    </sheet>
+  </element>
+
+  <element name="Winds of Revival" type="Archetype Feature" source="Obojima" id="ID_winds_of_revival">
+    <description>
+      <p>At 14th level, when reduced to 0 hit points, you instead regain half your hit points and are lifted by a tempest of petals. You can immediately use your reaction to unleash a concussive wind. Creatures in a 10-foot radius must make a Strength saving throw against your spell save DC or take 2d8 slashing damage and be pushed 15 feet away. On a successful save, they take half damage and aren’t pushed.</p>
+      <p>Once you use this feature, you can’t do so again until you finish a long rest.</p>
+    </description>
+    <sheet>
+      <description>When reduced to 0 HP, regain half HP and use reaction to unleash wind (10ft radius, Strength save, 2d8 slashing damage, pushed 15ft). Once per long rest.</description>
+    </sheet>
+  </element>
+</elements>

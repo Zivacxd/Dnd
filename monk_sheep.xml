@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>Sheep Dragon Shepherd</name>
+        <description>The Sheep Dragon Shepherd Monastic Tradition from Obojima.</description>
+        <author url="https://obojima.com">Obojima</author>
+        <update version="1.0">
+            <file name="monk-sheepdragon.xml" url="https://example.com/path-to-updates/monk-sheepdragon.xml" />
+        </update>
+    </info>
+
+    <element name="Way of the Sheep Dragon Shepherd" type="Archetype" source="Obojima" id="ID_author_obojima_ARCHETYPE_sheepdragon">
+        <supports>Monastic Tradition</supports>
+        <description>
+            <p>The Sheep Dragon Shepherd is a monk who trains among the sheep dragons of Obojima, learning to protect their allies and embody the freedom and unity of the flock.</p>
+            <div element="ID_sheepdragon_herding_sheep" />
+            <div element="ID_sheepdragon_wind_shot" />
+            <div element="ID_sheepdragon_intercepting_maneuver" />
+            <div element="ID_sheepdragon_take_to_the_skies" />
+            <div element="ID_sheepdragon_guide_to_the_herd" />
+        </description>
+        <sheet>
+            <description>Monks who embody the unity and freedom of sheep dragons, protecting their allies with unique abilities.</description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_sheepdragon_herding_sheep" level="3" />
+            <grant type="Archetype Feature" id="ID_sheepdragon_wind_shot" level="6" />
+            <grant type="Archetype Feature" id="ID_sheepdragon_intercepting_maneuver" level="6" />
+            <grant type="Archetype Feature" id="ID_sheepdragon_take_to_the_skies" level="11" />
+            <grant type="Archetype Feature" id="ID_sheepdragon_guide_to_the_herd" level="17" />
+        </rules>
+    </element>
+
+    <element name="Herding Sheep" type="Archetype Feature" source="Obojima" id="ID_sheepdragon_herding_sheep">
+        <description>
+            <p>At 3rd level, you gain the ability to herd your allies, calling them closer or moving them out of danger. As a bonus action, you can spend 1 or more ki points to move a willing creature you can see within 60 feet. This movement does not provoke opportunity attacks. If the creature moves toward you, it can move up to 15 feet per ki point spent. In other directions, it can move up to 10 feet per ki point spent.</p>
+            <p>At higher levels, you can target additional creatures with this ability: 2 creatures at 5th level, 3 creatures at 10th level, and 4 creatures at 15th level.</p>
+        </description>
+        <sheet>
+            <description>Spend ki points as a bonus action to move willing creatures within 60 feet. Movement is 15 feet per ki point if toward you, 10 feet in other directions. Scales with level.</description>
+        </sheet>
+    </element>
+
+    <element name="Wind Shot" type="Archetype Feature" source="Obojima" id="ID_sheepdragon_wind_shot">
+        <description>
+            <p>At 6th level, you can mimic the sheep dragon's wind pistol. When making an unarmed strike, you can choose to fire a compressed blast of air as a ranged weapon attack with a range of 60 feet, using your unarmed strike's attack bonus and damage die.</p>
+            <p>Additionally, when you hit a target with this special attack, you can spend 1 ki point to force the target to make a Strength saving throw against your ki save DC. On a failed save, the target is either knocked prone or pushed 10 feet away from you (your choice).</p>
+        </description>
+        <sheet>
+            <description>Use an unarmed strike to make a ranged attack (60 feet). On hit, spend 1 ki point to knock prone or push 10 feet (Strength save against ki save DC).</description>
+        </sheet>
+    </element>
+
+    <element name="Intercepting Maneuver" type="Archetype Feature" source="Obojima" id="ID_sheepdragon_intercepting_maneuver">
+        <description>
+            <p>At 6th level, when a friendly creature within 10 feet of you is hit by an attack, you can use your reaction and spend 1 ki point to reduce the damage they take. Roll your Martial Arts die and add your Dexterity modifier; the total is subtracted from the damage dealt to the ally.</p>
+        </description>
+        <sheet>
+            <description>Use a reaction and spend 1 ki point to reduce damage to an ally within 10 feet. Roll Martial Arts die + Dexterity modifier to determine the reduction.</description>
+        </sheet>
+    </element>
+
+    <element name="Take to the Skies" type="Archetype Feature" source="Obojima" id="ID_sheepdragon_take_to_the_skies">
+        <description>
+            <p>At 11th level, when you use Step of the Wind, you gain a flying speed equal to your walking speed until the end of your turn. Additionally, you take both the Disengage and Dash actions simultaneously when using Step of the Wind.</p>
+        </description>
+        <sheet>
+            <description>Using Step of the Wind grants you a flying speed equal to your walking speed and both Disengage and Dash actions until the end of your turn.</description>
+        </sheet>
+    </element>
+
+    <element name="Guide to the Herd" type="Archetype Feature" source="Obojima" id="ID_sheepdragon_guide_to_the_herd">
+        <description>
+            <p>At 17th level, when you use Patient Defense to gain the benefits of the Dodge action, you can spend 1 additional ki point to extend this benefit to your allies. Each friendly creature within 30 feet that can see or hear you can use its reaction to also gain the benefits of the Dodge action until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>When using Patient Defense, spend 1 additional ki point to let allies within 30 feet gain the Dodge action benefit as a reaction.</description>
+        </sheet>
+    </element>
+</elements>
